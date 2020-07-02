@@ -1,4 +1,4 @@
-# swagger_client.EventApi
+# connprod.EventApi
 
 All URIs are relative to *https://hackathon.tim.it/connprod*
 
@@ -17,19 +17,19 @@ Add a new event for a connected product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import connprod
+from connprod.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKey
-configuration = swagger_client.Configuration()
+configuration = connprod.Configuration()
 configuration.api_key['apikey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EventApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Event() # Event | Event object to be added
+api_instance = connprod.EventApi(connprod.ApiClient(configuration))
+body = connprod.Event() # Event | Event object to be added
 object_id = 'object_id_example' # str | identifier for the product (e.g. MAC address of the device, serial number, etc.) - format: <code>prefix:value</code> where prefix is: <code>mac</code>, <code>serial</code>, etc.. and value is without ':' special character. Example: <code>mac:AABBCCDDEEFF</code>
 
 try:
@@ -71,19 +71,19 @@ Add an array of new events for a connected product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import connprod
+from connprod.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKey
-configuration = swagger_client.Configuration()
+configuration = connprod.Configuration()
 configuration.api_key['apikey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EventApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.Event()] # list[Event] | Events array object that needs to be added for the connected product
+api_instance = connprod.EventApi(connprod.ApiClient(configuration))
+body = [connprod.Event()] # list[Event] | Events array object that needs to be added for the connected product
 object_id = 'object_id_example' # str | identifier for the product (e.g. MAC address of the device, serial number, etc.) - format: <code>prefix:value</code> where prefix is: <code>mac</code>, <code>serial</code>, etc.. and value is without ':' special character. Example: <code>mac:AABBCCDDEEFF</code>
 
 try:
@@ -125,18 +125,18 @@ Get events for the specified connected product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import connprod
+from connprod.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKey
-configuration = swagger_client.Configuration()
+configuration = connprod.Configuration()
 configuration.api_key['apikey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.EventApi(swagger_client.ApiClient(configuration))
+api_instance = connprod.EventApi(connprod.ApiClient(configuration))
 object_id = 'object_id_example' # str | identifier for the product (e.g. MAC address of the device, serial number, etc.) - format: <code>prefix:value</code> where prefix is: <code>mac</code>, <code>serial</code>, etc.. and value is without ':' special character. Example: <code>mac:AABBCCDDEEFF</code>
 time_min = 'time_min_example' # str | The min date to filter the data (ISO format YYYY/MM/DD)  In case of null value, It will be set to one week ago or, in case timeMax has a value,  It will be set to timeMax minus one week (optional)
 time_max = 'time_max_example' # str | The max date to filter the data (ISO format YYYY/MM/DD)  In case of null value, It will be now or timeMin plus one week (optional)

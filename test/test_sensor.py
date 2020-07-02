@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import connprod
 from models.sensor import Sensor  # noqa: E501
-from swagger_client.rest import ApiException
+from connprod.rest import ApiException
 
 
 class TestSensor(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSensor(unittest.TestCase):
     def testSensor(self):
         """Test Sensor"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.sensor.Sensor()  # noqa: E501
+        # model = connprod.models.sensor.Sensor()  # noqa: E501
         pass
 
 

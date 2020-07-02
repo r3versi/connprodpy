@@ -1,4 +1,4 @@
-# swagger_client.UserProductApi
+# connprod.UserProductApi
 
 All URIs are relative to *https://hackathon.tim.it/connprod*
 
@@ -16,18 +16,18 @@ Returns all the user products
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import connprod
+from connprod.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKey
-configuration = swagger_client.Configuration()
+configuration = connprod.Configuration()
 configuration.api_key['apikey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserProductApi(swagger_client.ApiClient(configuration))
+api_instance = connprod.UserProductApi(connprod.ApiClient(configuration))
 
 try:
     # Returns all the user products
@@ -64,18 +64,18 @@ Removes a product from a user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import connprod
+from connprod.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKey
-configuration = swagger_client.Configuration()
+configuration = connprod.Configuration()
 configuration.api_key['apikey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['apikey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.UserProductApi(swagger_client.ApiClient(configuration))
+api_instance = connprod.UserProductApi(connprod.ApiClient(configuration))
 object_id = 'object_id_example' # str | identifier for the product (e.g. MAC address of the device, serial number, etc.) - format: <code>prefix:value</code> where prefix is: <code>mac</code>, <code>serial</code>, etc.. and value is without ':' special character. Example: <code>mac:AABBCCDDEEFF</code>
 
 try:

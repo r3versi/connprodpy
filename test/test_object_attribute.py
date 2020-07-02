@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import connprod
 from models.object_attribute import ObjectAttribute  # noqa: E501
-from swagger_client.rest import ApiException
+from connprod.rest import ApiException
 
 
 class TestObjectAttribute(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestObjectAttribute(unittest.TestCase):
     def testObjectAttribute(self):
         """Test ObjectAttribute"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.object_attribute.ObjectAttribute()  # noqa: E501
+        # model = connprod.models.object_attribute.ObjectAttribute()  # noqa: E501
         pass
 
 

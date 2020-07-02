@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import connprod
 from models.geo import Geo  # noqa: E501
-from swagger_client.rest import ApiException
+from connprod.rest import ApiException
 
 
 class TestGeo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGeo(unittest.TestCase):
     def testGeo(self):
         """Test Geo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.geo.Geo()  # noqa: E501
+        # model = connprod.models.geo.Geo()  # noqa: E501
         pass
 
 

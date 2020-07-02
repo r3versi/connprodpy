@@ -14,15 +14,15 @@
 from __future__ import absolute_import
 
 # import models into model package
-from swagger_client.models.error_response import ErrorResponse
-from swagger_client.models.event import Event
-from swagger_client.models.event_attribute import EventAttribute
-from swagger_client.models.events import Events
-from swagger_client.models.geo import Geo
-from swagger_client.models.init import Init
-from swagger_client.models.interaction import Interaction
-from swagger_client.models.location import Location
-from swagger_client.models.object_attribute import ObjectAttribute
-from swagger_client.models.sensor import Sensor
-from swagger_client.models.user_product import UserProduct
-from swagger_client.models.user_products_response import UserProductsResponse
+from connprod.models.error_response import ErrorResponse
+from connprod.models.event import Event
+from connprod.models.event_attribute import EventAttribute
+from connprod.models.events import Events
+from connprod.models.geo import Geo
+from connprod.models.init import Init
+from connprod.models.interaction import Interaction
+from connprod.models.location import Location
+from connprod.models.object_attribute import ObjectAttribute
+from connprod.models.sensor import Sensor
+from connprod.models.user_product import UserProduct
+from connprod.models.user_products_response import UserProductsResponse

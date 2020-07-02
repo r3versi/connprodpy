@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import connprod
 from models.interaction import Interaction  # noqa: E501
-from swagger_client.rest import ApiException
+from connprod.rest import ApiException
 
 
 class TestInteraction(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInteraction(unittest.TestCase):
     def testInteraction(self):
         """Test Interaction"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.interaction.Interaction()  # noqa: E501
+        # model = connprod.models.interaction.Interaction()  # noqa: E501
         pass
 
 
